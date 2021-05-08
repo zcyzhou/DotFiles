@@ -62,7 +62,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
 
 Plug 'rust-lang/rust.vim'
- 
+
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
