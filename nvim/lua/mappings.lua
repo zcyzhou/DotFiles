@@ -34,3 +34,21 @@ key_mapper('n', '<leader>key', ":Telescope keymaps<cr>")
 key_mapper('n', ',b', ":Telescope buffers<cr>")
 key_mapper('n', ',m', ":Telescope man_pages<cr>")
 
+key_mapper('n', '<leader>ss', ":SessionSave<cr>")
+key_mapper('n', '<leader>sl', ":SessionLoad<cr>")
+
+-- GitSigns key mappings
+key_mapper('n', '<leader>hs', ":lua require'gitsigns'.stage_hunk()<CR>")
+key_mapper('v', '<leader>hs', ":lua require'gitsigns'.stage_hunk({vim.fn.line('.'), vim.fn.line('v')})<CR>")
+key_mapper('n', '<leader>hu', ":lua require'gitsigns'.undo_stage_hunk()<CR>")
+key_mapper('n', '<leader>hr', ":lua require'gitsigns'.reset_hunk()<CR>")
+key_mapper('v', '<leader>hr', ":lua require'gitsigns'.reset_hunk({vim.fn.line('.'), vim.fn.line('v')})<CR>")
+key_mapper('n', '<leader>hR', ":lua require'gitsigns'.reset_buffer()<CR>")
+key_mapper('n', '<leader>hp', ":lua require'gitsigns'.preview_hunk()<CR>")
+
+-- File Explorer nvim-tree
+key_mapper('n', '<leader>ft', ":NvimTreeToggle<cr>")
+
+-- Comment plugin
+key_mapper('n', '<leader>cc', ":CommentToggle<cr>")
+key_mapper('v', '<leader>cc', ":CommentToggle<cr>")

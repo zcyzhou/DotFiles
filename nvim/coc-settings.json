@@ -1,0 +1,5 @@
+{
+	"diagnostic.checkCurrentLine": true,
+	"python.pythonPath": "~/miniforge3/bin/python"
+
+}

@@ -70,6 +70,38 @@ gls.left[4] = {
 	}
 }
 
+gls.left[5] = {
+	DiagnosticError = {
+		provider = 'DiagnosticError',
+		icon = '   ',
+		highlight = {colors.red,colors.bg}
+	}
+}
+
+gls.left[6] = {
+	DiagnosticWarn = {
+		provider = 'DiagnosticWarn',
+		icon = '   ',
+		highlight = {colors.yellow,colors.bg},
+	}
+}
+
+gls.left[7] = {
+	DiagnosticHint = {
+		provider = 'DiagnosticHint',
+		icon = '   ',
+		highlight = {colors.cyan,colors.bg},
+	}
+}
+
+gls.left[8] = {
+	DiagnosticInfo = {
+		provider = 'DiagnosticInfo',
+		icon = '   ',
+		highlight = {colors.blue,colors.bg},
+	}
+}
+
 -- Right Side
 gls.right[6] = {
 	FileEncode = {

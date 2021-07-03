@@ -4,6 +4,7 @@
 
 local g = vim.g
 
+-- Use telescope as the fuzzy search engine
 g.dashboard_default_executive = 'telescope'
 
 g.dashboard_custom_header = {
