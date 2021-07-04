@@ -18,6 +18,8 @@ o.startofline = true
 -- Buffer local options
 bo.syntax = 'ON'
 bo.textwidth = 100
+bo.autoindent = true
+bo.cindent = true
 
 -- Window local options
 wo.nu = true

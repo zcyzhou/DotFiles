@@ -60,10 +60,11 @@ return require('packer').startup(
 		}
 
 		-- Auto Pairs
-		use {
-			"windwp/nvim-autopairs",
-			config = function() require'my-autopairs' end
-		}
+		-- use {
+		-- 	"windwp/nvim-autopairs",
+		-- 	config = function() require'my-autopairs' end
+		-- }
+		use 'jiangmiao/auto-pairs'
 		
 		-- File explorer
 		use {
