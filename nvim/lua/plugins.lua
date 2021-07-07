@@ -86,7 +86,8 @@ return require('packer').startup(
 
 		-- Markdown Previewer
 		use {
-			'iamcco/markdown-preview.nvim'
+			'iamcco/markdown-preview.nvim',
+			run = [[sh -c 'cd app && yarn install']]
 		}
 
 		-- Comment plugin
@@ -94,5 +95,8 @@ return require('packer').startup(
 			"terrortylor/nvim-comment",
 			config = function() require'my-comment' end
 		}
+
+		-- Rust plugin
+		use 'rust-lang/rust.vim'
 	end
 )
