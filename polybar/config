@@ -230,8 +230,11 @@ type = internal/network
 interface = wlp7s0
 interval = 3.0
 format-connected =  <label-connected>
-label-connected = " 󰤪  " 
+format-disconnected = <label-disconnected>
+label-connected =  󰤪 %downspeed:5% 
+label-disconnected = " 󰤪  " 
 label-connected-foreground = #A3BE8C 
+label-disconnected-foreground = #e06c75
 
 [module/volume]
 type = custom/script
