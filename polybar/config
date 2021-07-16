@@ -203,7 +203,7 @@ type = internal/date
 interval = 60
 format = <label>
 format-background = #2b2f37
-date = %{F#888e96}󰥔 %H:%M%{F-}
+date = %{F#61afef}󰥔 %H:%M%{F-} 󰃭 %a, %b %d%{F-}
 time-alt = %{F#61afef}󰃭 %a, %b %d%{F-}
 
 label = %date%%time%
