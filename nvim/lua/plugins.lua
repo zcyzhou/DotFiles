@@ -15,6 +15,12 @@ return require('packer').startup(
 		-- Themes
 		use 'joshdick/onedark.vim'
 
+		-- neovim org mode
+		use {
+			'vhyrro/neorg',
+			config = function() require'my-neorg' end
+		}
+
 		-- Treesitter
 		use {
 			"nvim-treesitter/nvim-treesitter", 

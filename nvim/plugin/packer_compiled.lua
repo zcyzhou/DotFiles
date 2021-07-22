@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/chuyangzhou/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/chuyangzhou/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/chuyangzhou/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/chuyangzhou/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/chuyangzhou/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/chuyangzhou/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?.lua;/home/chuyangzhou/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?/init.lua;/home/chuyangzhou/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?.lua;/home/chuyangzhou/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/chuyangzhou/.cache/nvim/packer_hererocks/2.0.5/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,111 +71,120 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["auto-pairs"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/auto-pairs"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
   ["coc.nvim"] = {
-    config = { "\27LJ\2\n&\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\vmy-coc\frequire\0" },
+    config = { "\27LJ\1\2&\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\vmy-coc\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/coc.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/coc.nvim"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17my-dashboard\frequire\0" },
+    config = { "\27LJ\1\2,\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\17my-dashboard\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
   ["galaxyline.nvim"] = {
-    config = { "\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18my-statusline\frequire\0" },
+    config = { "\27LJ\1\2-\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\18my-statusline\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16my-gitsigns\frequire\0" },
+    config = { "\27LJ\1\2+\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\16my-gitsigns\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
+  },
+  neorg = {
+    config = { "\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rmy-neorg\frequire\0" },
+    loaded = true,
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/neorg"
   },
   ["nvim-comment"] = {
-    config = { "\27LJ\2\n*\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\15my-comment\frequire\0" },
+    config = { "\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15my-comment\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-comment"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-comment"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16my-nvimtree\frequire\0" },
+    config = { "\27LJ\1\2+\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\16my-nvimtree\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18my-treesitter\frequire\0" },
+    config = { "\27LJ\1\2-\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\18my-treesitter\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/onedark.vim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
   ["rust.vim"] = {
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/rust.vim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/rust.vim"
   },
   ["telescope.nvim"] = {
-    config = { "\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17my-telescope\frequire\0" },
+    config = { "\27LJ\1\2,\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\17my-telescope\frequire\0" },
     loaded = true,
-    path = "/Users/chuyangzhou/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/chuyangzhou/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18my-treesitter\frequire\0", "config", "nvim-treesitter")
+try_loadstring("\27LJ\1\2-\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\18my-treesitter\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
--- Config for: coc.nvim
-time([[Config for coc.nvim]], true)
-try_loadstring("\27LJ\2\n&\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\vmy-coc\frequire\0", "config", "coc.nvim")
-time([[Config for coc.nvim]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16my-gitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\2\n*\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\15my-comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
 -- Config for: dashboard-nvim
 time([[Config for dashboard-nvim]], true)
-try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17my-dashboard\frequire\0", "config", "dashboard-nvim")
+try_loadstring("\27LJ\1\2,\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\17my-dashboard\frequire\0", "config", "dashboard-nvim")
 time([[Config for dashboard-nvim]], false)
+-- Config for: neorg
+time([[Config for neorg]], true)
+try_loadstring("\27LJ\1\2(\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\rmy-neorg\frequire\0", "config", "neorg")
+time([[Config for neorg]], false)
+-- Config for: coc.nvim
+time([[Config for coc.nvim]], true)
+try_loadstring("\27LJ\1\2&\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\vmy-coc\frequire\0", "config", "coc.nvim")
+time([[Config for coc.nvim]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\1\2*\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\15my-comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\1\2+\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\16my-gitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: galaxyline.nvim
+time([[Config for galaxyline.nvim]], true)
+try_loadstring("\27LJ\1\2-\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\18my-statusline\frequire\0", "config", "galaxyline.nvim")
+time([[Config for galaxyline.nvim]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\n,\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\17my-telescope\frequire\0", "config", "telescope.nvim")
+try_loadstring("\27LJ\1\2,\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\17my-telescope\frequire\0", "config", "telescope.nvim")
 time([[Config for telescope.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n+\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\16my-nvimtree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\1\2+\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\16my-nvimtree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: galaxyline.nvim
-time([[Config for galaxyline.nvim]], true)
-try_loadstring("\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18my-statusline\frequire\0", "config", "galaxyline.nvim")
-time([[Config for galaxyline.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
