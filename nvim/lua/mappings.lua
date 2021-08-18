@@ -14,7 +14,9 @@ end
 -- Key mappings
 key_mapper('i', 'jj', '<esc>')
 key_mapper('n', 'H', '^')
+key_mapper('v', 'H', '^')
 key_mapper('n', 'L', '$')
+key_mapper('v', 'L', '$')
 key_mapper('n', 'J', '10j')
 key_mapper('n', 'K', '10k')
 key_mapper('n', '<leader>wj', '<C-w>j')
