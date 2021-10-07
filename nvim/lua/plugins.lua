@@ -102,6 +102,10 @@ return require('packer').startup(
 			config = function() require'my-comment' end
 		}
 
+		use {
+			"hrsh7th/nvim-cmp"
+		}
+
 		-- Rust plugin
 		use 'rust-lang/rust.vim'
 	end
