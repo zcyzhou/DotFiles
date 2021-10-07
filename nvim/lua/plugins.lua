@@ -86,8 +86,8 @@ return require('packer').startup(
 		-- 	config = function() require'my-coc' end
 		-- }
 		use {
-			'neovim/nvim-lspconfig',
-			config = funciton() require'my-lsp' end
+			"neovim/nvim-lspconfig",
+			config = function() require'my-lsp' end
 		}
 
 		-- use {
