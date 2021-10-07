@@ -80,10 +80,14 @@ return require('packer').startup(
 		}
 
 		-- AutoComplete and Linting Plugins
+		-- use {
+		-- 	"neoclide/coc.nvim",
+		-- 	branch = 'release',
+		-- 	config = function() require'my-coc' end
+		-- }
 		use {
-			"neoclide/coc.nvim",
-			branch = 'release',
-			config = function() require'my-coc' end
+			'neovim/nvim-lspconfig',
+			config = funciton() require'my-lsp' end
 		}
 
 		-- use {
