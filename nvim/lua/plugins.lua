@@ -16,10 +16,10 @@ return require('packer').startup(
 		use 'joshdick/onedark.vim'
 
 		-- neovim org mode
-		use {
-			'vhyrro/neorg',
-			config = function() require'my-neorg' end
-		}
+		-- use {
+		-- 	'vhyrro/neorg',
+		-- 	config = function() require'my-neorg' end
+		-- }
 
 		-- Treesitter
 		use {
