@@ -7,17 +7,17 @@ require'nvim-tree'.setup {
 	nvim_tree_auto_close = 0, -- closes tree when it's the last window
 	nvim_tree_tab_open = 0,
 	nvim_tree_update_cwd = 1,
-	nvim_tree_follow = 1
+	nvim_tree_follow = 1,
+	nvim_tree_hide_dotfiles = 1,
+	nvim_tree_ignore = {".git", "node_modules", ".cache"}
 }
 
 g.nvim_tree_side = "left"
 g.nvim_tree_width = 25
-g.nvim_tree_ignore = {".git", "node_modules", ".cache"}
 g.nvim_tree_gitignore = 1
 g.nvim_tree_auto_ignore_ft = {"dashboard"} -- don't open tree on specific fiypes.
 g.nvim_tree_quit_on_open = 0 -- closes tree when file's opened
 g.nvim_tree_indent_markers = 1
-g.nvim_tree_hide_dotfiles = 1
 g.nvim_tree_git_hl = 1
 g.nvim_tree_highlight_opened_files = 0
 g.nvim_tree_root_folder_modifier = ":t"
