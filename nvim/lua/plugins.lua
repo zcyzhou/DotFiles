@@ -14,12 +14,7 @@ return require('packer').startup(
 
 		-- Themes
 		use 'joshdick/onedark.vim'
-
-		-- neovim org mode
-		-- use {
-		-- 	'vhyrro/neorg',
-		-- 	config = function() require'my-neorg' end
-		-- }
+		use {'dracula/vim', as = 'dracula'}
 
 		-- Treesitter
 		use {
@@ -45,20 +40,21 @@ return require('packer').startup(
 		}
 
 		-- Statusline
+		-- use {
+		-- 	'glepnir/galaxyline.nvim',
+		-- 	branch = 'main',
+		-- 	-- your statusline
+		-- 	config = function() require'my-statusline' end,
+		-- 	-- some optional icons
+		-- 	requires = {'kyazdani42/nvim-web-devicons', opt = true}
+		-- }
+
 		use {
-			'glepnir/galaxyline.nvim',
-			branch = 'main',
-			-- your statusline
-			config = function() require'my-statusline' end,
-			-- some optional icons
-			requires = {'kyazdani42/nvim-web-devicons', opt = true}
+			'nvim-lualine/lualine.nvim',
+			requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+			config = function() require'my-lualine' end
 		}
 
-		-- use {
-		-- 	"akinsho/nvim-bufferline.lua",
-		-- 	config = function() require'my-bufferline' end
-		-- }
-		
 		-- Git Plugins
 		use {
 			'lewis6991/gitsigns.nvim',
@@ -79,25 +75,9 @@ return require('packer').startup(
 			config = function() require'my-nvimtree' end
 		}
 
-		-- AutoComplete and Linting Plugins
-		-- use {
-		-- 	"neoclide/coc.nvim",
-		-- 	branch = 'release',
-		-- 	config = function() require'my-coc' end
-		-- }
 		use {
 			"neovim/nvim-lspconfig",
 			config = function() require'my-lsp' end
-		}
-
-		-- use {
-		-- 	"dense-analysis/ale",
-		-- }
-
-		-- Markdown Previewer
-		use {
-			'iamcco/markdown-preview.nvim',
-			run = [[sh -c 'cd app && yarn install']]
 		}
 
 		-- Comment plugin
@@ -114,3 +94,4 @@ return require('packer').startup(
 		use 'rust-lang/rust.vim'
 	end
 )
+

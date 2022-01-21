@@ -3,8 +3,11 @@
 -- 			by Chuyang Zhou
 
 local o = vim.o
+local g = vim.g
 local wo = vim.wo
 local bo = vim.bo
+
+g.colors_name = 'onedark'
 
 -- Global settings
 o.termguicolors = true		-- Correct colors		
