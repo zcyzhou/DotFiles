@@ -2,7 +2,7 @@
 --
 
 vim.g.mapleader = ' '
-vim.g.colors_name = 'onedark'
+vim.cmd('colo onedark')
 
 
 -- Load normal settings and key mappings
