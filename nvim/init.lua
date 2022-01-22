@@ -3,7 +3,7 @@
 
 
 vim.g.mapleader = ' '
-vim.cmd('colo dracula')
+vim.cmd('colo onedarkpro')
 
 -- Load normal settings and key mappings
 require('mappings')

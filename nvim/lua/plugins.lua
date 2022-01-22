@@ -15,6 +15,10 @@ return require('packer').startup(
 		-- Themes
 		use 'joshdick/onedark.vim'
 		use {'dracula/vim', as = 'dracula'}
+		use {
+			'olimorris/onedarkpro.nvim',
+			config = function() require'my-onedark' end
+		}
 
 		-- Treesitter
 		use {
@@ -62,11 +66,10 @@ return require('packer').startup(
 		}
 
 		-- Auto Pairs
-		-- use {
-		-- 	"windwp/nvim-autopairs",
-		-- 	config = function() require'my-autopairs' end
-		-- }
-		use 'jiangmiao/auto-pairs'
+		use {
+			"windwp/nvim-autopairs",
+			config = function() require'my-autopairs' end
+		}
 		
 		-- File explorer
 		use {
@@ -75,23 +78,46 @@ return require('packer').startup(
 			config = function() require'my-nvimtree' end
 		}
 
-		use {
-			"neovim/nvim-lspconfig",
-			config = function() require'my-lsp' end
-		}
-
 		-- Comment plugin
 		use {
 			"terrortylor/nvim-comment",
 			config = function() require'my-comment' end
 		}
 
+		-- LSP config
 		use {
-			"hrsh7th/nvim-cmp"
+			"neovim/nvim-lspconfig",
+			config = function() require'my-lsp' end
 		}
 
+
+		use {
+			"hrsh7th/nvim-cmp",
+			config = function() require'my-nvim-cmp' end
+		}
+
+		use 'onsails/lspkind-nvim'
+		use 'hrsh7th/cmp-nvim-lsp'
+		use 'hrsh7th/cmp-buffer'
+		use 'hrsh7th/cmp-path'
+		use 'hrsh7th/cmp-cmdline'
+		-- For luasnip users.
+		use {
+			'L3MON4D3/LuaSnip',
+			config = function() require'my-snippets' end
+		}
+		use 'saadparwaiz1/cmp_luasnip'
+
+		-- For ultisnips users.
+		use 'SirVer/ultisnips'
+		use 'quangnguyen30192/cmp-nvim-ultisnips'
 		-- Rust plugin
 		use 'rust-lang/rust.vim'
+
+		use {
+			"ray-x/lsp_signature.nvim",
+			config = function() require'my-lsp-signature' end
+		}
 	end
 )
 

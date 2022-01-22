@@ -23,8 +23,8 @@ key_mapper('n', '<leader>wj', '<C-w>j')
 key_mapper('n', '<leader>wk', '<C-w>k')
 key_mapper('n', '<leader>wh', '<C-w>h')
 key_mapper('n', '<leader>wl', '<C-w>l')
-key_mapper('n', 'j', 'gjzz')
-key_mapper('n', 'k', 'gkzz')
+-- key_mapper('n', 'j', 'gjzz')
+-- key_mapper('n', 'k', 'gkzz')
 
 -- Telescope Key mappings
 key_mapper('n', '<leader>ff', ':Telescope find_files<cr>')
